@@ -43,7 +43,6 @@ class Data{
         let tweets = localStorage.getItem("tws");
         if(tweets){
             tweets = JSON.parse(tweets);
-            console.log(tweets);
             id=tweets[tweets.length-1].id;
         }
         return id;
@@ -94,8 +93,19 @@ class UI{
 }
 
 class Tweet{
+    /**
+     * @constructor
+     * @param {String} id 
+     * @param {String} content 
+     */
     constructor(id, content){
+        /**
+         * @type {String}
+         */
         this.id = id;
+        /**
+         * @type {String}
+         */
         this.content = content;
     }
 }
@@ -111,12 +121,10 @@ function nuevoTw(e){
     }
 }
 
+
 function eliminarTw(e){
     e.preventDefault();
     if(e.target.classList.contains("eliminar")){
-        
-        
-        
         if(confirm("¿Está seguro que desea eliminar este Tweet?")){
             ui.deleteTw(e.target.parentElement.parentElement);
         }
