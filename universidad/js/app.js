@@ -39,30 +39,16 @@ UI.cantidadElementos();
 document.getElementById("lista-cursos").addEventListener("click", agregarCarrito);
 document.getElementById("lista-carrito").addEventListener("click", eliminarCarrito);
 document.getElementById("vaciar-carrito").addEventListener("click", vaciarCarrito);
-
-
-/********* 
- * Test de eventos
-**********/
-/**
- * Funcion splice para strings
- * @param {Number} idx Indice de splice
- * @param {Number} rem Cantidad de items
- * @param {String} str Reemplazar por "Str"
- * @returns {String} Nuevo string
- */
-/*
-String.prototype.splice = function(idx, rem, str){
-    return this.slice(0, idx) + str + this.slice(idx+ Math.abs(rem));
-}
-
-document.getElementById("buscador").addEventListener("keyup", (e)=>{
+let i=0;
+while(true){
+    i++;
+    console.log(`Aqui i = ${i}`);
+    if(i%2==0){
+        continue;
+    }
+    if(i>10){
+        break;
+    }
+    console.log(i);
     
-    while(e.target.value.includes("."))
-        e.target.value=e.target.value.replace(".","");
-    while(e.target.value.includes(","))
-        e.target.value=e.target.value.replace(",","");
-    for(let i = e.target.value.length-3; i>0; i=i-3)
-        e.target.value=e.target.value.splice(i, 0, ".");
-})
-*/
+}
