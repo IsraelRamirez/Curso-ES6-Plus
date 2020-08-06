@@ -1,160 +1,143 @@
-const autos = [
-	{
-		marca: 'BMW',
-		modelo: 'Serie 3',
-		year: 2012,
-		precio: 30000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{ marca: 'Audi', modelo: 'A4', year: 2018, precio: 40000, puertas: 4, color: 'Negro', transmision: 'automatico' },
-	{
-		marca: 'Ford',
-		modelo: 'Mustang',
-		year: 2015,
-		precio: 20000,
-		puertas: 2,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{ marca: 'Audi', modelo: 'A6', year: 2010, precio: 35000, puertas: 4, color: 'Negro', transmision: 'automatico' },
-	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
-		year: 2016,
-		precio: 70000,
-		puertas: 4,
-		color: 'Rojo',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
-		year: 2015,
-		precio: 25000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'Chevrolet',
-		modelo: 'Camaro',
-		year: 2018,
-		precio: 60000,
-		puertas: 2,
-		color: 'Rojo',
-		transmision: 'manual'
-	},
-	{ marca: 'Ford', modelo: 'Mustang', year: 2019, precio: 80000, puertas: 2, color: 'Rojo', transmision: 'manual' },
-	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
-		year: 2017,
-		precio: 40000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{ marca: 'Audi', modelo: 'A3', year: 2017, precio: 55000, puertas: 2, color: 'Negro', transmision: 'manual' },
-	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
-		year: 2012,
-		precio: 25000,
-		puertas: 2,
-		color: 'Rojo',
-		transmision: 'manual'
-	},
-	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
-		year: 2018,
-		precio: 45000,
-		puertas: 4,
-		color: 'Azul',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
-		year: 2019,
-		precio: 90000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{ marca: 'Ford', modelo: 'Mustang', year: 2017, precio: 60000, puertas: 2, color: 'Negro', transmision: 'manual' },
-	{
-		marca: 'Dodge',
-		modelo: 'Challenger',
-		year: 2015,
-		precio: 35000,
-		puertas: 2,
-		color: 'Azul',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'BMW',
-		modelo: 'Serie 3',
-		year: 2018,
-		precio: 50000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'BMW',
-		modelo: 'Serie 5',
-		year: 2017,
-		precio: 80000,
-		puertas: 4,
-		color: 'Negro',
-		transmision: 'automatico'
-	},
-	{
-		marca: 'Mercedes Benz',
-		modelo: 'Clase C',
-		year: 2018,
-		precio: 40000,
-		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico'
-	},
-	{ marca: 'Audi', modelo: 'A4', year: 2016, precio: 30000, puertas: 4, color: 'Azul', transmision: 'automatico' }
-];
+export function getAutos(){
+	return [
+		{
+			marca: 'BMW',
+			modelo: 'Serie 3',
+			year: 2012,
+			precio: 30000,
+			puertas: 4,
+			color: 'Blanco',
+			transmision: 'automatico'
+		},
+		{ marca: 'Audi', modelo: 'A4', year: 2018, precio: 40000, puertas: 4, color: 'Negro', transmision: 'automatico' },
+		{
+			marca: 'Ford',
+			modelo: 'Mustang',
+			year: 2015,
+			precio: 20000,
+			puertas: 2,
+			color: 'Blanco',
+			transmision: 'automatico'
+		},
+		{ marca: 'Audi', modelo: 'A6', year: 2010, precio: 35000, puertas: 4, color: 'Negro', transmision: 'automatico' },
+		{
+			marca: 'BMW',
+			modelo: 'Serie 5',
+			year: 2016,
+			precio: 70000,
+			puertas: 4,
+			color: 'Rojo',
+			transmision: 'automatico'
+		},
+		{
+			marca: 'Mercedes Benz',
+			modelo: 'Clase C',
+			year: 2015,
+			precio: 25000,
+			puertas: 4,
+			color: 'Blanco',
+			transmision: 'automatico'
+		},
+		{
+			marca: 'Chevrolet',
+			modelo: 'Camaro',
+			year: 2018,
+			precio: 60000,
+			puertas: 2,
+			color: 'Rojo',
+			transmision: 'manual'
+		},
+		{ marca: 'Ford', modelo: 'Mustang', year: 2019, precio: 80000, puertas: 2, color: 'Rojo', transmision: 'manual' },
+		{
+			marca: 'Dodge',
+			modelo: 'Challenger',
+			year: 2017,
+			precio: 40000,
+			puertas: 4,
+			color: 'Blanco',
+			transmision: 'automatico'
+		},
+		{ marca: 'Audi', modelo: 'A3', year: 2017, precio: 55000, puertas: 2, color: 'Negro', transmision: 'manual' },
+		{
+			marca: 'Dodge',
+			modelo: 'Challenger',
+			year: 2012,
+			precio: 25000,
+			puertas: 2,
+			color: 'Rojo',
+			transmision: 'manual'
+		},
+		{
+			marca: 'Mercedes Benz',
+			modelo: 'Clase C',
+			year: 2018,
+			precio: 45000,
+			puertas: 4,
+			color: 'Azul',
+			transmision: 'automatico'
+		},
+		{
+			marca: 'BMW',
+			modelo: 'Serie 5',
+			year: 2019,
+			precio: 90000,
+			puertas: 4,
+			color: 'Blanco',
+			transmision: 'automatico'
+		},
+		{ marca: 'Ford', modelo: 'Mustang', year: 2017, precio: 60000, puertas: 2, color: 'Negro', transmision: 'manual' },
+		{
+			marca: 'Dodge',
+			modelo: 'Challenger',
+			year: 2015,
+			precio: 35000,
+			puertas: 2,
+			color: 'Azul',
+			transmision: 'automatico'
+		},
+		{
+			marca: 'BMW',
+			modelo: 'Serie 3',
+			year: 2018,
+			precio: 50000,
+			puertas: 4,
+			color: 'Blanco',
+			transmision: 'automatico'
+		},
+		{
+			marca: 'BMW',
+			modelo: 'Serie 5',
+			year: 2017,
+			precio: 80000,
+			puertas: 4,
+			color: 'Negro',
+			transmision: 'automatico'
+		},
+		{
+			marca: 'Mercedes Benz',
+			modelo: 'Clase C',
+			year: 2018,
+			precio: 40000,
+			puertas: 4,
+			color: 'Blanco',
+			transmision: 'automatico'
+		},
+		{ marca: 'Audi', modelo: 'A4', year: 2016, precio: 30000, puertas: 4, color: 'Azul', transmision: 'automatico' }
+	];
+}
+/**
+ * 
+ * @param {Array} autos 
+ */
+export function mostrarAutos(autos){
+	
+	let mostrar = "";
 
-// forEach
-/*
-autos.forEach(auto =>{
-	console.log(auto.marca);
-})*/
-// map
-/*let marcas =[]
-marcas = autos.map((auto) =>{
-	if(!marcas.includes(auto.marca))
-		return auto.marca;
-})
-console.log(marcas)*/
-// filter
-/*
-let marcas = autos.filter((auto) =>{
-	return !auto.marca.includes("Dodge")
-})
-console.log(marcas)*/
-// find
-/*
-let resultado = autos.find(auto =>{
-	return auto.marca.includes("BMW")
-})
-console.log(resultado)*/
-// reduce
-/*
-let resultado = autos.reduce((total, auto) =>{
-	return total + auto.precio;
-},0)
-console.log(resultado)*/
-// some
-/*
-let resultado = autos.some((auto)=> auto.marca === "BMW")
-console.log(resultado)*/
+	autos.forEach((auto, index)=>{
+		mostrar += `<p> #${index+1}: ${auto.marca} ${auto.modelo} ${auto.color} - ${auto.puertas} puertas - ${auto.year} ${auto.transmision} - $${auto.precio} </p>`
+	})
+	if(mostrar)
+		document.getElementById("resultado").innerHTML = mostrar;
+	else
+		document.getElementById("resultado").innerHTML ='<div class = "alerta error">No se encontraron resultados en la busqueda solicitada</div>';
+}
