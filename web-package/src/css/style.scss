@@ -1,0 +1,15 @@
+$primario: blue;
+$secundario: white;
+
+
+#test{
+    padding: 0px;
+    li{
+        background-color: $primario;
+        color: $secundario;
+        &:nth-child(2n+1){
+            background-color: $secundario;
+            color: $primario;
+        }
+    }
+}
